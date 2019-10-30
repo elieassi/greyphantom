@@ -110,7 +110,7 @@ class CheckAmbariAlerts < Sensu::Plugin::Check::CLI
                       name: "#{ambari_alert['Alert']['definition_name']}",
                       output: "#{alert_item['Alert']['label']}",
                       state: "#{alert_item['Alert']['state']}",
-					  maintenance: "#{alert_item['Alert']['maintenance_state']}",
+		      maintenance: "#{alert_item['Alert']['maintenance_state']}",
                       status: 2
       }
       # Forward alert directly to sensu client
